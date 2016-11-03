@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.tomato.curry.DateSelection">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/app_bar_height"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true">
+
+        <com.tomato.curry.Font.TcFontIcons
+            android:id="@+id/btdown"
+            style="@style/btndown_fonticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="b"
+            android:textColor="#0E0E0E" />
+
+        <TextView
+            style="@style/tv_slotdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="Slot Date"
+            android:textColor="#98989A"
+            android:textStyle="bold" />
+
+        <com.tomato.curry.Font.TcFontIcons
+            android:id="@+id/btdone"
+            style="@style/btndone_fonticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="a"
+            android:textColor="#0E0E0E" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rldate"
+        style="@style/rldate"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/top_bar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/tv_slotdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Today"
+                android:textColor="#020202"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                style="@style/lldate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvcalendar_date"
+                    style="@style/day_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01"
+                    android:textColor="#98989A" />
+
+                <LinearLayout
+                    style="@style/ll_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvcalendar_day"
+                        style="@style/tv_calendardayandmontyear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sunday"
+                        android:textColor="#98989A"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvcalendar_montyear"
+                        style="@style/tv_calendardayandmontyear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="may 2016"
+                        android:textColor="#98989A"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.tomato.curry.CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rldate" />
+
+
+</RelativeLayout>

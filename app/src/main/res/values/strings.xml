@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Tomato Curry</string>
+    <string name="pick_ur_city">PICK YOUR CITY</string>
+    <string name="dialog_title">Alert</string>
+    <string name="dialog_message">This App won\'t work in Pre Lollipop versions</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
+        <dex dex="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.0.0_43d57a16ee96dc923356f3b3c2d64329a1b1f7b8.jar" />
+    </item>
+    <item
+        jar="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
+        <dex dex="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.0.0_0eaf6a6fd151a2e39d50b259343967b4bd4bfa93.jar" />
+    </item>
+    <item
+        jar="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="62e5062ac4ef0922a26b9d897674bce28dcfd552">
+        <dex dex="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_fd133d146fd9084ea66084ec79ee6478013d5a0e.jar" />
+    </item>
+    <item
+        jar="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8dd49930e4f9dde1a42d37e362b9fea8b1b69c0d">
+        <dex dex="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-24.0.0_764ecf6e10e7e0ea0edb1c2dfb5ebc7d39b8acb8.jar" />
+    </item>
+    <item
+        jar="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_837ec6a8d1c59060a957bd8fd822bec10f5426cb.jar" />
+    </item>
+    <item
+        jar="C:\Users\CompIndia\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\24.0.0\2943c74db6d4346ab8c6531adac91fa05c137c40\support-annotations-24.0.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_d325645b9cf25cf172b60ec08fff9377824ba0f0.jar" />
+    </item>
+    <item
+        jar="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_43df696c2c56039824ea2e652f2cc189c8d49d4b.jar" />
+    </item>
+    <item
+        jar="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.0.0_2cf6f69b6349c7a149bf5d0f1711c1b81f8c0139.jar" />
+    </item>
+    <item
+        jar="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.0.0_ea4b49b3fe0cb585b7372fcc93ecd88848c98422.jar" />
+    </item>
+    <item
+        jar="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.0.0_20aef979af4491b347da37e2d517861774772dde.jar" />
+    </item>
+    <item
+        jar="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="40cbdd7b3c4accaacc6b1f063c08a0e5bf8cee81">
+        <dex dex="E:\Personal Work\Tomato_Curry_Git\app\build\intermediates\pre-dexed\debug\instant-run_5d6a1ab04e2a1d4f6cee40443c82d779c214f805.jar" />
+    </item>
+
+</items>

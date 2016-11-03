@@ -1,0 +1,123 @@
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base" />
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="SplashTheme" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="textsize_margintop">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="textsize_24">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="citylist_margin_bottom">
+        <item name="android:layout_marginBottom">40dp</item>
+    </style>
+
+    <style name="city_overview_tbar_height">
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="city_overview_ficon">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="app_logo_dimen">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="city_overview_llcitydescription">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">60dp</item>
+    </style>
+
+    <style name="city_overview_tvcity_descrition">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="city_overview_llcoming_soon_and_genderselection">
+        <item name="android:layout_marginTop">160dp</item>
+    </style>
+
+    <style name="llmale_female_margintop">
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="llmale_marginright">
+        <item name="android:layout_marginRight">60dp</item>
+    </style>
+
+    <style name="ivmale_female_width_height">
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_width">90dp</item>
+    </style>
+
+    <style name="tvmale_female_margintop_textsize">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="app_bar_height">
+        <item name="android:layout_height">30dp</item>
+    </style>
+<style name="btndown_fonticon">
+    <item name="android:textSize">20sp</item>
+    <item name="android:layout_marginLeft">10dp</item>
+</style>
+    <style name="tv_slotdate">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="btndone_fonticon">
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+<style name="rldate">
+    <item name="android:layout_height">180dp</item>
+</style>
+    <style name="lldate">
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+    <style name="day_num">
+        <item name="android:textSize">62sp</item>
+    </style>
+    <style name="ll_calendar">
+        <item name="android:layout_marginTop">14dp</item>
+    </style>
+    <style name="tv_calendardayandmontyear">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="saloonoverview_appbar">
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="saloonoverview_btnback_fonticon">
+        <item name="android:textSize">24sp</item>
+<item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="saloonoverview_appbar_tvmen">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="saloonoverview_btndowndirection_fonticon">
+        <item name="android:textSize">26sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+</resources>

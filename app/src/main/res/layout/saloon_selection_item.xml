@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/list_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSaloonno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSaloonname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=".Green Trends"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSaloon_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Dr.No :181-224/d,vv mahal, beside \n kalanikethan,Tirupathi,Andhra Pradesh"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#717171"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp">
+
+        <com.tomato.curry.Font.TcFontIcons
+            android:id="@+id/ivfpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:text="h"
+            android:textColor="#4862b9"
+            android:textSize="20sp" />
+
+        <com.tomato.curry.Font.TcFontIcons
+            android:id="@+id/ivfglasses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/ivfpic"
+            android:layout_toRightOf="@+id/ivfpic"
+            android:text="i"
+            android:textColor="#4862b9"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/star5"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/estar" />
+
+        <ImageView
+            android:id="@+id/star4"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/star5"
+            android:layout_toStartOf="@+id/star5"
+            android:src="@drawable/estar" />
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/star4"
+            android:layout_toStartOf="@+id/star4"
+            android:src="@drawable/estar" />
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/star3"
+            android:layout_toStartOf="@+id/star3"
+            android:src="@drawable/estar" />
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/star2"
+            android:layout_toStartOf="@+id/star2"
+            android:src="@drawable/estar" />
+    </RelativeLayout>
+
+</LinearLayout>

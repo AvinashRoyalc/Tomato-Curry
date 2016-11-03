@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/city_overview_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tpty"
+    tools:context="com.tomato.curry.CityOverview">
+
+    <RelativeLayout
+        style="@style/city_overview_tbar_height"
+        android:layout_width="match_parent">
+
+        <com.tomato.curry.Font.TcFontIcons
+            android:id="@+id/ivback"
+            style="@style/city_overview_ficon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="k"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/app_logo"
+            style="@style/app_logo_dimen"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/app_logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/city_title_desc"
+        style="@style/city_overview_llcitydescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/city_title"
+            style="@style/textsize_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIRUPATHI"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/city_description"
+            style="@style/city_overview_tvcity_descrition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#afafaf" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comingsooon_layout"
+        style="@style/city_overview_llcoming_soon_and_genderselection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city_title_desc"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/comingsooon"
+            style="@style/textsize_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coming Soon"
+            android:textColor="@color/cardview_light_background" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/men_women_selection"
+        style="@style/city_overview_llcoming_soon_and_genderselection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city_title_desc"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvhola"
+            style="@style/textsize_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hola! I am a"
+            android:textColor="@color/cardview_light_background" />
+
+        <LinearLayout
+            style="@style/llmale_female_margintop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/llmale_marginright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/men"
+                    style="@style/ivmale_female_width_height"
+                    android:src="@drawable/male" />
+
+                <TextView
+                    android:id="@+id/tvgender"
+                    style="@style/tvmale_female_margintop_textsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Men"
+                    android:textColor="@color/cardview_light_background" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/women"
+                    style="@style/ivmale_female_width_height"
+                    android:src="@drawable/female" />
+
+                <TextView
+                    android:id="@+id/tvwomen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/tvmale_female_margintop_textsize"
+                    android:gravity="center"
+                    android:text="Women"
+                    android:textColor="@color/cardview_light_background"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
