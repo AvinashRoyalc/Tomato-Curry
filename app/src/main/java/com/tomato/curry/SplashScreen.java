@@ -84,9 +84,9 @@ private CitySelectionAdapter mAdapter;
             String dateAsString = outputFmt.format(time);
 
             JSONObject jsonObject = new JSONObject();
-            jsonObject.put("app_id", "b90f5e38-46cf-4291-a3c1-583830483cf8");
+            jsonObject.put("app_id", "90de1f88-6b48-4698-9c9c-dd74c2208c4d");
             //jsonObject.put("identifier", Utils.gcm);
-            jsonObject.put("notification_types", "1");
+            jsonObject.put("notification_types", 1);
             jsonObject.put("language", Locale.getDefault().getDisplayLanguage());
             jsonObject.put("timezone", dateAsString);
             jsonObject.put("device_os", Build.VERSION.RELEASE);
