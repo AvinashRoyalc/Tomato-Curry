@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "516552254510",
+    "firebase_url": "https://tomatocurry-aab2e.firebaseio.com",
+    "project_id": "tomatocurry-aab2e",
+    "storage_bucket": "tomatocurry-aab2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516552254510:android:bece6824d6e1c104",
+        "android_client_info": {
+          "package_name": "com.tomato.curry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516552254510-s8mp2jntgkmpe4qdg4a8sas1hvlljtmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdLK82r3iAk8_ICIpV5fBxzeQtcSmxNhM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

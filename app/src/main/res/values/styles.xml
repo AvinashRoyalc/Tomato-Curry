@@ -7,9 +7,18 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
     </style>
+
     <style name="SplashTheme" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
         <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@android:anim/slide_out_right</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
     </style>
 
     <style name="textsize_margintop">
@@ -77,47 +86,73 @@
     </style>
 
     <style name="app_bar_height">
-        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_height">50dp</item>
     </style>
-<style name="btndown_fonticon">
-    <item name="android:textSize">20sp</item>
-    <item name="android:layout_marginLeft">10dp</item>
-</style>
+
+    <style name="btndown_fonticon">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
     <style name="tv_slotdate">
         <item name="android:textSize">20sp</item>
     </style>
+
     <style name="btndone_fonticon">
         <item name="android:layout_marginRight">10dp</item>
         <item name="android:textSize">20sp</item>
     </style>
-<style name="rldate">
-    <item name="android:layout_height">180dp</item>
-</style>
+
+    <style name="rldate">
+        <item name="android:layout_height">180dp</item>
+    </style>
+
     <style name="lldate">
         <item name="android:layout_marginTop">2dp</item>
     </style>
+
     <style name="day_num">
         <item name="android:textSize">62sp</item>
     </style>
+
     <style name="ll_calendar">
         <item name="android:layout_marginTop">14dp</item>
     </style>
+
     <style name="tv_calendardayandmontyear">
         <item name="android:textSize">18sp</item>
     </style>
+
     <style name="saloonoverview_appbar">
         <item name="android:layout_height">50dp</item>
     </style>
+
     <style name="saloonoverview_btnback_fonticon">
         <item name="android:textSize">24sp</item>
-<item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
     </style>
+
     <style name="saloonoverview_appbar_tvmen">
         <item name="android:layout_marginLeft">10dp</item>
         <item name="android:textSize">20sp</item>
     </style>
+
     <style name="saloonoverview_btndowndirection_fonticon">
         <item name="android:textSize">26sp</item>
         <item name="android:layout_marginLeft">10dp</item>
     </style>
+    <!--  Custom Progress Dialog  -->
+    <style name="commonLoading">
+        <item name="android:layout_height">70dp</item>
+    </style>
+
+    <style name="loadingCommon" parent="android:Widget.ProgressBar">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
 </resources>

@@ -8,8 +8,8 @@
 
     <RelativeLayout
         android:id="@+id/top_bar"
+        style="@style/app_bar_height"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
         android:layout_alignParentTop="true">
 
         <com.tomato.curry.Font.TcFontIcons
@@ -161,8 +161,8 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:layout_marginStart="20dp"
-            android:text="k"
             android:padding="10dp"
+            android:text="k"
             android:textColor="@color/orange"
             android:textSize="24sp" />
 
@@ -216,9 +216,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/rltimeselection"
+        android:layout_marginTop="10dp"
         android:columnWidth="10dp"
         android:gravity="center"
-        android:layout_marginTop="10dp"
         android:horizontalSpacing="10dp"
         android:numColumns="3"
         android:verticalSpacing="20dp" />
