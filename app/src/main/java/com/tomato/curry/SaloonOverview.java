@@ -2,8 +2,8 @@ package com.tomato.curry;
 
 import android.content.Intent;
 import android.graphics.BitmapFactory;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -12,8 +12,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
-import com.tomato.curry.Data.Utils;
 import com.tomato.curry.Data.TcData;
+import com.tomato.curry.Data.Utils;
+import com.tomato.curry.Font.TcFontIcons2;
 
 import java.util.ArrayList;
 
@@ -23,12 +24,14 @@ public class SaloonOverview extends AppCompatActivity {
     private ImageView ivbook;
     private String Saloonno, Saloonname, Saloonaddrs;
     private TextView tvsaloonno, tvsaloonname, tvsaloonaddrs;
+    private TcFontIcons2 ivback;
     ArrayList<String> arrDownloadUrls = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saloon_overview);
+        ivback = (TcFontIcons2) findViewById(R.id.ivback);
         Saloonno = getIntent().getStringExtra("saloonno");
         Saloonname = "." + getIntent().getStringExtra("saloonname");
         Saloonaddrs = getIntent().getStringExtra("saloonadd");
@@ -58,6 +61,12 @@ public class SaloonOverview extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SaloonOverview.this, DateSelection.class));
+            }
+        });
+        ivback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
         // Set in/out flipping animations

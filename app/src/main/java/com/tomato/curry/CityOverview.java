@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.tomato.curry.Data.TcData;
 import com.tomato.curry.Font.TcFontIcons;
+import com.tomato.curry.Font.TcFontIcons2;
 
 public class CityOverview extends Activity {
     private ImageView ivapplogo, ivmen, ivwomen;
@@ -19,7 +20,7 @@ public class CityOverview extends Activity {
     private Integer city_image;
     private RelativeLayout rlrootlayout;
     private TextView city_title, city_description;
-    private TcFontIcons ivback;
+    private TcFontIcons2 ivback;
     public TcData objTcData;
     public Intent intent;
     String city_name, city_desc;
@@ -47,7 +48,7 @@ public class CityOverview extends Activity {
         } else {
             llmen_women_selection.setVisibility(View.VISIBLE);
         }
-        ivback = (TcFontIcons) findViewById(R.id.ivback);
+        ivback = (TcFontIcons2) findViewById(R.id.ivback);
         ivapplogo = (ImageView) findViewById(R.id.app_logo);
         ivmen = (ImageView) findViewById(R.id.men);
         ivwomen = (ImageView) findViewById(R.id.women);

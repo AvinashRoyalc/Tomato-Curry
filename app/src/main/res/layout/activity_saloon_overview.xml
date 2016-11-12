@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:background="@android:color/transparent">
 
-        <com.tomato.curry.Font.TcFontIcons
+        <com.tomato.curry.Font.TcFontIcons2
             android:id="@+id/ivback"
             style="@style/saloonoverview_btnback_fonticon"
             android:layout_width="wrap_content"
@@ -19,7 +19,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:text="k"
+            android:text="a"
             android:textColor="#FFFFFF"
 
             />

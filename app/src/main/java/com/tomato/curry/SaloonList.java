@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.tomato.curry.Adapters.SaloonListAdapter;
 import com.tomato.curry.Data.TcData;
 import com.tomato.curry.Font.TcFontIcons;
+import com.tomato.curry.Font.TcFontIcons2;
 
 import java.util.ArrayList;
 
@@ -21,7 +22,8 @@ public class SaloonList extends AppCompatActivity {
     private String gender;
     private RecyclerView.LayoutManager mLayoutManager;
     private RecyclerView mRecyclerView;
-    private TcFontIcons iv_back, iv_direction;
+    private TcFontIcons iv_direction;
+    private TcFontIcons2 iv_back;
     private SaloonListAdapter saloonListAdapter;
     private int listsize;
     public TcData objTcdata;
@@ -33,7 +35,7 @@ public class SaloonList extends AppCompatActivity {
         setContentView(R.layout.activity_saloon_list);
         iv_app_logo = (ImageView) findViewById(R.id.app_logo);
         iv_direction = (TcFontIcons) findViewById(R.id.ivdirection);
-        iv_back = (TcFontIcons) findViewById(R.id.ivback);
+        iv_back = (TcFontIcons2) findViewById(R.id.ivback);
         tvCityName=(TextView)findViewById(R.id.city_name);
         tvgender =(TextView)findViewById(R.id.tvgender);
         banner_imgs = new ArrayList<>();
