@@ -4,12 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerInParent="true"
-    android:background="@android:color/transparent"
+    android:background="#ffffff"
     android:layout_gravity="center">
 
     <ProgressBar
         android:id="@+id/pbPercentage"
-        style="@style/loadingCommon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        style="@style/AlertDialog.AppCompat.Light"
         android:layout_gravity="center_vertical"
         android:max="100"
         android:rotation="0" />
@@ -20,6 +23,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:text="Downloading files please wait..."
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="18sp" />
 </LinearLayout>

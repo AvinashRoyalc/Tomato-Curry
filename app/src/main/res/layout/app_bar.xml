@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="60dp"
-    android:background="#171717">
+    android:alpha="0"
+    android:background="@drawable/background_toolbar_translucent" >
 
     <com.tomato.curry.Font.TcFontIcons2
         android:id="@+id/ivback"

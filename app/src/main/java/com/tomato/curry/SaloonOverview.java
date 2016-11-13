@@ -42,8 +42,8 @@ public class SaloonOverview extends AppCompatActivity {
         tvsaloonname.setText(Saloonname);
         tvsaloonaddrs.setText(Saloonaddrs);
         mViewFlipper = (ViewFlipper) findViewById(R.id.viewflipper);
-        mViewFlipper.setAutoStart(true);
-        mViewFlipper.setFlipInterval(4000);
+        mViewFlipper.setAutoStart(false);
+//        mViewFlipper.setFlipInterval(4000);
         TcData data = new TcData();
         arrDownloadUrls = data.getImageURLS(Saloonaddrs);
         for (int i = 0; i < arrDownloadUrls.size(); i++) {
@@ -93,13 +93,6 @@ public class SaloonOverview extends AppCompatActivity {
 
             return super.onFling(e1, e2, velocityX, velocityY);
         }
-    }
-
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        mGestureDetector.onTouchEvent(event);
-
-        return super.onTouchEvent(event);
     }
 
 }

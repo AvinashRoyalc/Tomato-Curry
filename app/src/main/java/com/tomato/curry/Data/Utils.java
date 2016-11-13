@@ -7,11 +7,13 @@ import android.os.Environment;
 import android.util.Log;
 
 import java.io.File;
+import java.util.ArrayList;
 
 public class Utils {
 
     public static boolean NetworkState = false;
     public static CustomProgressDialog pDialog;
+    public static ArrayList<String> arrDownloadUrls = new ArrayList<>();
 
     public static boolean isConnected(Context context) {
         try {
@@ -37,6 +39,7 @@ public class Utils {
         }
         return NetworkState;
     }
+
     public static String getRootFolderPath(Context context) {
         File myDir = context.getFilesDir();
         File folder = new File(myDir, "byji");
@@ -76,7 +79,6 @@ public class Utils {
         pDialog.setCancelable(false);
         pDialog.show();
     }
-
 
 
 }
