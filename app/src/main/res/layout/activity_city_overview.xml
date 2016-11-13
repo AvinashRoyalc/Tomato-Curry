@@ -11,13 +11,13 @@
         style="@style/city_overview_tbar_height"
         android:layout_width="match_parent">
 
-        <com.tomato.curry.Font.TcFontIcons
+        <com.tomato.curry.Font.TcFontIcons2
             android:id="@+id/ivback"
             style="@style/city_overview_ficon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:text="k"
+            android:text="a"
             android:textColor="#FFFFFF" />
 
         <ImageView

@@ -29,9 +29,12 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.onesignal.OneSignal;
 import com.tomato.curry.Adapters.CitySelectionAdapter;
 import com.tomato.curry.Data.TcData;
 import com.tomato.curry.ItemAnimator.ItemAnimatorFactory;
+import com.tomato.curry.onesignal.ExampleNotificationOpenedHandler;
+import com.tomato.curry.onesignal.ExampleNotificationReceivedHandler;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -49,7 +52,8 @@ public class SplashScreen extends Activity {
     private final int SPLASH_LENGTH = 200;
     private int mContentViewHeight;
     public TextView tvtitle;
-private CitySelectionAdapter mAdapter;
+    private CitySelectionAdapter mAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,11 +62,6 @@ private CitySelectionAdapter mAdapter;
 //            showLocationDialog();
 //
 //        }
-
-        if (getStringValue(SplashScreen.this, "id").isEmpty()) {
-            apiCalling();
-        }
-
         new Handler().postDelayed(new Runnable() {
 
             @Override
@@ -72,87 +71,6 @@ private CitySelectionAdapter mAdapter;
                 onFakeCreate();
             }
         }, SPLASH_LENGTH);
-    }
-
-    private void apiCalling() {
-        try {
-            Calendar calendar = Calendar.getInstance();
-            calendar.setTimeZone(TimeZone.getTimeZone("UTC"));
-            calendar.setTime(new Date());
-            Date time = calendar.getTime();
-            SimpleDateFormat outputFmt = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-            String dateAsString = outputFmt.format(time);
-
-            JSONObject jsonObject = new JSONObject();
-            jsonObject.put("app_id", "90de1f88-6b48-4698-9c9c-dd74c2208c4d");
-            //jsonObject.put("identifier", Utils.gcm);
-            jsonObject.put("notification_types", 1);
-            jsonObject.put("language", Locale.getDefault().getDisplayLanguage());
-            jsonObject.put("timezone", dateAsString);
-            jsonObject.put("device_os", Build.VERSION.RELEASE);
-            jsonObject.put("device_type", "1");
-            jsonObject.put("device_model", Build.MODEL);
-
-            Log.e("params", jsonObject.toString());
-
-            JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST,
-                    "https://onesignal.com/api/v1/players", jsonObject,
-                    new Response.Listener<JSONObject>() {
-                        @Override
-                        public void onResponse(JSONObject response) {
-                            try {
-                                if (response.has("success")) {
-                                    if (response.getBoolean("success")) {
-                                        setStringValue(SplashScreen.this, "id", response.getString("id"));
-                                        Log.e("id", response.getString("id"));
-                                    }
-                                }
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                    }, new Response.ErrorListener() {
-
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    error.printStackTrace();
-                }
-            })
-            {
-                /**
-                 * Passing some request headers
-                 * */
-                @Override
-                public Map<String, String> getHeaders() throws AuthFailureError {
-                    HashMap<String, String> headers = new HashMap<String, String>();
-                    headers.put("Content-Type", "application/json");
-                    headers.put("Accept", "application/json");
-                    return headers;
-                }
-            };
-
-            Volley.newRequestQueue(SplashScreen.this).add(jsonObjReq).setRetryPolicy(new DefaultRetryPolicy(20 * 1000, 0,
-                    DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-    }
-
-    private static void setStringValue(Context ctx, String key, String value) {
-        SharedPreferences pref = ctx.getSharedPreferences("ABHI", Context.MODE_PRIVATE);
-        SharedPreferences.Editor edit = pref.edit();
-        edit.putString(key, value);
-        edit.commit();
-    }
-
-    private static String getStringValue(Context ctx, String key) {
-        String value = "";
-        SharedPreferences pref = ctx.getSharedPreferences("ABHI", Context.MODE_PRIVATE);
-        value = pref.getString(key, value);
-        if (value != null)
-            return value;
-        else return "";
     }
 
     private void onFakeCreate() {
@@ -184,11 +102,12 @@ private CitySelectionAdapter mAdapter;
             @Override
             public void onItemClick(View view, int position) {
                 Intent intent = new Intent(SplashScreen.this, CityOverview.class);
-               callingActivity(position,intent);
+                callingActivity(position, intent);
             }
         }));
     }
-    private  void callingActivity(int Position,Intent intent){
+
+    private void callingActivity(int Position, Intent intent) {
         switch (Position) {
             case 0:
                 intent.putExtra("city", "TIRUPATHI");
@@ -233,6 +152,7 @@ private CitySelectionAdapter mAdapter;
                 startActivity(intent);
         }
     }
+
     private void collapseToolbar() {
         int toolBarHeight;
         TypedValue tv = new TypedValue();
@@ -270,7 +190,6 @@ private CitySelectionAdapter mAdapter;
         }
 
     }
-
 
 
 }
