@@ -1,21 +1,15 @@
 package com.tomato.curry;
 
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.tomato.curry.Adapters.SameSaloonListAdapter;
-import com.tomato.curry.Data.DownLoadFileFromUrls;
 import com.tomato.curry.Data.TcData;
-import com.tomato.curry.Data.Utils;
 import com.tomato.curry.Font.TcFontIcons;
 
 import java.util.ArrayList;
