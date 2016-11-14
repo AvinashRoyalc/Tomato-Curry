@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="60dp"
-    android:background="#171717">
+    android:layout_height="60dp">
 
     <com.tomato.curry.Font.TcFontIcons2
         android:id="@+id/ivback"

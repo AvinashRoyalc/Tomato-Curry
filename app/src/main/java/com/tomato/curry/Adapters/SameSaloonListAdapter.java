@@ -11,9 +11,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.tomato.curry.Data.Utils;
 import com.tomato.curry.Data.TcData;
+import com.tomato.curry.Data.Utils;
 import com.tomato.curry.R;
 import com.tomato.curry.SaloonOverview;
 
@@ -52,7 +53,6 @@ public class SameSaloonListAdapter extends RecyclerView.Adapter<SameSaloonListAd
     }
 
     ArrayList<String> saloondata1, saloondata2;
-    ArrayList<String> arrDownloadUrls = new ArrayList<>();
     public int saloonsize;
     public int stars1, stars2;
     public Context context;
@@ -87,21 +87,21 @@ public class SameSaloonListAdapter extends RecyclerView.Adapter<SameSaloonListAd
         public void onClick(View v) {
             TcData data = new TcData();
             if (itempos == 0) {
-                arrDownloadUrls = data.getImageURLS(saloondata1.get(2));
+                Utils.arrDownloadUrls = data.getImageURLS(saloondata1.get(2));
             } else if (itempos == 1) {
-                arrDownloadUrls = data.getImageURLS(saloondata2.get(2));
+                Utils.arrDownloadUrls = data.getImageURLS(saloondata2.get(2));
             }
-            for (int i = 0; i < arrDownloadUrls.size(); i++) {
-                String url = arrDownloadUrls.get(i);
+            for (int i = 0; i < Utils.arrDownloadUrls.size(); i++) {
+                String url = Utils.arrDownloadUrls.get(i);
                 if (!TextUtils.isEmpty(Utils.isFileExist(url.split("/")[url.split("/").length - 1], Utils.getRootFolderPath(context))))
-                    arrDownloadUrls.remove(i);
+                    Utils.arrDownloadUrls.remove(i);
             }
-            if (arrDownloadUrls.size() > 0)
+            if (Utils.arrDownloadUrls.size() > 0)
                 if (Utils.isConnected(context)) {
                     new DownLoadFileFromUrls(context).execute();
                 } else {
                     // Show ALert
-
+                    Toast.makeText(context, "Please connect your internet to download data required before processing", Toast.LENGTH_LONG).show();
                 }
             else
                 callNextActivity();
@@ -122,93 +122,6 @@ public class SameSaloonListAdapter extends RecyclerView.Adapter<SameSaloonListAd
         }
 
         context.startActivity(intent);
-    }
-
-    private class DownLoadFileFromUrls extends AsyncTask<String, String, String> {
-        final String root;
-        final Context context;
-
-        DownLoadFileFromUrls(Context context) {
-            this.context = context;
-            root = Utils.getRootFolderPath(context);
-        }
-
-        @Override
-        protected void onPostExecute(String value) {
-            Utils.pDialog.dismiss();
-            if (!TextUtils.isEmpty(value)) {
-                if (Utils.isConnected(context)) {
-                    new DownLoadFileFromUrls(context).execute();
-                } else {
-                    // Show ALert
-                }
-            } else {
-                callNextActivity();
-            }
-        }
-
-        @Override
-        protected String doInBackground(String... params) {
-            try {
-                if (arrDownloadUrls.size() != 0) {
-                    for (int i = 0; i < arrDownloadUrls.size(); i++) {
-                        try {
-                            String urll = arrDownloadUrls.get(i);
-                            if (urll.startsWith("https")) {
-                                urll = urll.replace("https", "http");
-                            }
-                            String[] arrChild = urll.split("/");
-                            if (TextUtils.isEmpty(Utils.isFileExist(arrChild[arrChild.length - 1], root))) {
-                                int count;
-                                URL url = new URL(urll);
-                                URLConnection conection = url.openConnection();
-                                conection.connect();
-                                int lenghtOfFile = conection.getContentLength();
-                                InputStream input = new BufferedInputStream(url.openStream(), 8192);
-                                File tempFile = new File(root, "temp" + arrChild[arrChild.length - 1]);
-                                OutputStream output = new FileOutputStream(tempFile.getAbsolutePath());
-                                byte data[] = new byte[1024];
-                                long total = 0;
-                                while ((count = input.read(data)) != -1) {
-                                    total += count;
-                                    output.write(data, 0, count);
-                                }
-                                output.flush();
-                                output.close();
-                                input.close();
-                                File original = new File(root, arrChild[arrChild.length - 1]);
-                                original.delete();
-                                tempFile.renameTo(original);
-                            }
-                            String[] values = new String[1];
-                            values[0] = "" + i;
-                            publishProgress(values);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            if (!Utils.isConnected(context)) {
-                return "error";
-            } else {
-                return "";
-            }
-        }
-
-        protected void onPreExecute() {
-            Utils.startProgressBar(context);
-        }
-
-        @Override
-        protected void onProgressUpdate(String... values) {
-            int index = Integer.parseInt(values[0]);
-            Log.v("onProgressUpdate", "" + index);
-            super.onProgressUpdate(values);
-        }
-
     }
 
 
@@ -309,5 +222,93 @@ public class SameSaloonListAdapter extends RecyclerView.Adapter<SameSaloonListAd
     @Override
     public int getItemCount() {
         return saloonsize;
+    }
+
+
+    public class DownLoadFileFromUrls extends AsyncTask<String, String, String> {
+
+        final String root;
+        final Context context;
+
+        public DownLoadFileFromUrls(Context context) {
+            this.context = context;
+            root = Utils.getRootFolderPath(context);
+        }
+
+        @Override
+        protected void onPostExecute(String value) {
+            Utils.pDialog.dismiss();
+            if (!TextUtils.isEmpty(value)) {
+                if (Utils.isConnected(context)) {
+                    new DownLoadFileFromUrls(context).execute();
+                } else {
+                    Toast.makeText(context, "Oops! please check your internet connection", Toast.LENGTH_LONG).show();
+                }
+            } else {
+                callNextActivity();
+            }
+        }
+
+        @Override
+        protected String doInBackground(String... params) {
+            try {
+                if (Utils.arrDownloadUrls.size() != 0) {
+                    for (int i = 0; i < Utils.arrDownloadUrls.size(); i++) {
+                        try {
+                            String urll = Utils.arrDownloadUrls.get(i);
+                            if (urll.startsWith("https")) {
+                                urll = urll.replace("https", "http");
+                            }
+                            String[] arrChild = urll.split("/");
+                            if (TextUtils.isEmpty(Utils.isFileExist(arrChild[arrChild.length - 1], root))) {
+                                int count;
+                                URL url = new URL(urll);
+                                URLConnection conection = url.openConnection();
+                                conection.connect();
+                                int lenghtOfFile = conection.getContentLength();
+                                InputStream input = new BufferedInputStream(url.openStream(), 8192);
+                                File tempFile = new File(root, "temp" + arrChild[arrChild.length - 1]);
+                                OutputStream output = new FileOutputStream(tempFile.getAbsolutePath());
+                                byte data[] = new byte[1024];
+                                long total = 0;
+                                while ((count = input.read(data)) != -1) {
+                                    total += count;
+                                    output.write(data, 0, count);
+                                }
+                                output.flush();
+                                output.close();
+                                input.close();
+                                File original = new File(root, arrChild[arrChild.length - 1]);
+                                original.delete();
+                                tempFile.renameTo(original);
+                            }
+                            String[] values = new String[1];
+                            values[0] = "" + i;
+                            publishProgress(values);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            if (!Utils.isConnected(context)) {
+                return "error";
+            } else {
+                return "";
+            }
+        }
+
+        protected void onPreExecute() {
+            Utils.startProgressBar(context);
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            int index = Integer.parseInt(values[0]);
+            Log.v("onProgressUpdate", "" + index);
+            super.onProgressUpdate(values);
+        }
     }
 }

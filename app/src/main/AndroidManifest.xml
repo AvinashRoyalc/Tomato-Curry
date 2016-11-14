@@ -30,12 +30,24 @@
         <activity
             android:name=".SaloonList"
             android:screenOrientation="portrait" />
-        <activity android:name=".SaloonSelection" />
-        <activity android:name=".SaloonOverview" />
-        <activity android:name=".DateSelection" />
-        <activity android:name=".TimeSelection" />
-        <activity android:name=".SaloonServiceSelection" />
-        <activity android:name=".ServiceSummary" />
+        <activity
+            android:name=".SaloonSelection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SaloonOverview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DateSelection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TimeSelection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SaloonServiceSelection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ServiceSummary"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -64,6 +76,7 @@
 
         <activity
             android:name="com.onesignal.PermissionsActivity"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <service android:name="com.onesignal.NotificationRestoreService" />

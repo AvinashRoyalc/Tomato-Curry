@@ -44,6 +44,7 @@ public class SaloonOverview extends AppCompatActivity {
         mViewFlipper = (ViewFlipper) findViewById(R.id.viewflipper);
         mViewFlipper.setAutoStart(true);
         mViewFlipper.setFlipInterval(4000);
+        mViewFlipper.setEnabled(false);
         TcData data = new TcData();
         arrDownloadUrls = data.getImageURLS(Saloonaddrs);
         for (int i = 0; i < arrDownloadUrls.size(); i++) {
@@ -73,33 +74,26 @@ public class SaloonOverview extends AppCompatActivity {
         mViewFlipper.setInAnimation(this, android.R.anim.fade_in);
         mViewFlipper.setOutAnimation(this, android.R.anim.fade_out);
 
-        CustomGestureDetector customGestureDetector = new CustomGestureDetector();
-        mGestureDetector = new GestureDetector(this, customGestureDetector);
+//        CustomGestureDetector customGestureDetector = new CustomGestureDetector();
+//        mGestureDetector = new GestureDetector(this, customGestureDetector);
     }
 
-    class CustomGestureDetector extends GestureDetector.SimpleOnGestureListener {
-        @Override
-        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-
-            // Swipe left (next)
-            if (e1.getX() > e2.getX()) {
-                mViewFlipper.showNext();
-            }
-
-            // Swipe right (previous)
-            if (e1.getX() < e2.getX()) {
-                mViewFlipper.showPrevious();
-            }
-
-            return super.onFling(e1, e2, velocityX, velocityY);
-        }
-    }
-
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        mGestureDetector.onTouchEvent(event);
-
-        return super.onTouchEvent(event);
-    }
+//    class CustomGestureDetector extends GestureDetector.SimpleOnGestureListener {
+//        @Override
+//        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+//
+//            // Swipe left (next)
+//            if (e1.getX() > e2.getX()) {
+//                mViewFlipper.showNext();
+//            }
+//
+//            // Swipe right (previous)
+//            if (e1.getX() < e2.getX()) {
+//                mViewFlipper.showPrevious();
+//            }
+//
+//            return super.onFling(e1, e2, velocityX, velocityY);
+//        }
+//    }
 
 }

@@ -6,6 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.tomato.curry.Adapters.SameSaloonListAdapter;
 import com.tomato.curry.Data.TcData;
@@ -23,7 +24,7 @@ public class SaloonSelection extends AppCompatActivity {
     private ImageView iv_saloon_poster;
     private ArrayList<String> saloondata1 = new ArrayList<>();
     private ArrayList<String> saloondata2 = new ArrayList<>();
-
+    private LinearLayout root_layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
