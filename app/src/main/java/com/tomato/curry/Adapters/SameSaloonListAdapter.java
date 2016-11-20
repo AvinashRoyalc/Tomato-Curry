@@ -273,6 +273,8 @@ public class SameSaloonListAdapter extends RecyclerView.Adapter<SameSaloonListAd
                                 long total = 0;
                                 while ((count = input.read(data)) != -1) {
                                     total += count;
+                                    int percentage = (int) ((total * 100) / lenghtOfFile);
+                                    Log.e("percentage", percentage + "");
                                     output.write(data, 0, count);
                                 }
                                 output.flush();

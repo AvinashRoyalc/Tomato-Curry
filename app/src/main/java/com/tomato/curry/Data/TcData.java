@@ -31,7 +31,7 @@ public class TcData {
     public String[] mrchange_data = {"1", "Mr Change", "Dr No:1-1-33,Berri street,Tirupati-517501,Andhra Pradesh,India", "4"};
     public String[] voguefamilysalon_data = {"1", "Vogue Family Salon", "Dr No:19-8-115/a1,1st floor Hathiramji colony,Air bypass road,Tirupati-517501,Andhra Pradesh,India", "4"};
     public String[] chaitu_s_data = {"1", "Chaitu's Beauty & SPA", "opp. Radhanarayana hospital,Hathiramji colony,Tirupati-517501,Andhra Pradesh,India", "5"};
-    public String[] clouds_nine_women_data = {"1", "Cloud9", "opp. Radhanarayana hospital,Hathiramji colony,Tirupati-517501,Andhra Pradesh,India", "5"};
+    public String[] clouds_nine_women_data = {"1", "Cloud9", "H.NO.203,K.K.LAYOUT,TIRUPATI-517501,ANDHRA PRADESH,INDIA", "5"};
     public String[] missnmisses_data = {"1", "Miss n Misses", "Dr No:19-4-146/c,stv nagar,Tirupati-517501,\nAndhra Pradesh,India", "3"};
 
     public HashMap<String, String[]> getSaloonwomenHashmap(int position) {
@@ -120,87 +120,87 @@ public class TcData {
     //UniSex Saloon pics
     String[] naturals_lounge =
             {"https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals+Lounge/nl1.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals+Lounge/nl2.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals+Lounge/nl3.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals+Lounge/nl4.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals+Lounge/nl5.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals+Lounge/nl6.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals+Lounge/nl2.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals+Lounge/nl3.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals+Lounge/nl4.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals+Lounge/nl5.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals+Lounge/nl6.png",
                     "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals+Lounge/nl7.png"};
     String[] green_trends1 =
             {"https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/Air+BypassRoad/gtabr1.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/Air+BypassRoad/gtabr2.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/Air+BypassRoad/gtabr3.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/Air+BypassRoad/gtabr4.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/Air+BypassRoad/gtabr5.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/Air+BypassRoad/gtabr2.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/Air+BypassRoad/gtabr3.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/Air+BypassRoad/gtabr4.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/Air+BypassRoad/gtabr5.png",
                     "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/Air+BypassRoad/gtabr6.png"};
     String[] green_trends2 =
             {"https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/VV+Mahal+Road/gtvvm1.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/VV+Mahal+Road/gtvvm2.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/VV+Mahal+Road/gtvvm3.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/VV+Mahal+Road/gtvvm4.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/VV+Mahal+Road/gtvvm5.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/VV+Mahal+Road/gtvvm2.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/VV+Mahal+Road/gtvvm3.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/VV+Mahal+Road/gtvvm4.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/VV+Mahal+Road/gtvvm5.png",
                     "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Greed+Trends/VV+Mahal+Road/gtvvm6.png"};
     String[] jawed_habib =
             {"https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Javid+Habbib/jh.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Javid+Habbib/jh1.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Javid+Habbib/jh2.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Javid+Habbib/jh3.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Javid+Habbib/jh1.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Javid+Habbib/jh2.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Javid+Habbib/jh3.png",
                     "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Javid+Habbib/jh4.png"
             };
     String[] naturals1 =
             {"https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals/nat1hrcabr.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals/nat2hrcabr.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals/nat3hrcabr.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals/nat4hrcabr.png",
-                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals/nat5hrcabr.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals/nat2hrcabr.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals/nat3hrcabr.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals/nat4hrcabr.png",
+//                    "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals/nat5hrcabr.png",
                     "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Naturals/nat6hrcabr.png"};
     String[] larken = {"https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Common/shop-images/Larken/lk.png"};
     String[] emos = {"https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Emos/em1.png"};
 
     //Mens Saloon pics
     String[] cut_cut = {"https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Cut+and+Cut/candc1.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Cut+and+Cut/candc2.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Cut+and+Cut/candc3.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Cut+and+Cut/candc2.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Cut+and+Cut/candc3.png",
             "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Cut+and+Cut/candc4.png"
     };
     String[] gokul_sri = {"https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Gokul+Sree/gs1.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Gokul+Sree/gs2.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Gokul+Sree/gs3.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Gokul+Sree/gs4.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Gokul+Sree/gs2.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Gokul+Sree/gs3.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Gokul+Sree/gs4.png",
             "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Gokul+Sree/gs5.png"
     };
     String[] mrchange = {"https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/MrChange/mrc1.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/MrChange/mrc2.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/MrChange/mrc2.png",
             "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/MrChange/mrc3.png"
     };
     String[] voguefamilysalon = {"https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Voulgue+Family+saloon/vfs1.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Voulgue+Family+saloon/vfs2.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Voulgue+Family+saloon/vfs3.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Voulgue+Family+saloon/vfs4.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Voulgue+Family+saloon/vfs2.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Voulgue+Family+saloon/vfs3.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Voulgue+Family+saloon/vfs4.png",
             "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Male/shop-images/Voulgue+Family+saloon/vfs5.png"};
 
     //Womens Saloon pics
     String[] chandu_sw = {"https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chandu+womens/chsw1.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chandu+womens/chsw2.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chandu+womens/chsw3.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chandu+womens/chsw4.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chandu+womens/chsw5.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chandu+womens/chsw2.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chandu+womens/chsw3.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chandu+womens/chsw4.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chandu+womens/chsw5.png",
             "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chandu+womens/chsw6.png"
     };
     String[] chaitu_s = {"https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chait%27s/chts1.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chait%27s/chts2.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chait%27s/chts3.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chait%27s/chts4.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chait%27s/chts5.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chait%27s/chts6.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chait%27s/chts2.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chait%27s/chts3.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chait%27s/chts4.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chait%27s/chts5.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chait%27s/chts6.png",
             "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Chait%27s/chts7.png"
     };
     String[] clouds_nine_women = {"https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Emos/em1.png"};
     String[] missnmisses = {"https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Miss+and+Misses/mnm1.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Miss+and+Misses/mnm2.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Miss+and+Misses/mnm3.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Miss+and+Misses/mnm4.png",
-            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Miss+and+Misses/mnm5.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Miss+and+Misses/mnm2.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Miss+and+Misses/mnm3.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Miss+and+Misses/mnm4.png",
+//            "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Miss+and+Misses/mnm5.png",
             "https://s3.ap-south-1.amazonaws.com/tomato-curry/Tirupathi/Female/shop-images/Miss+and+Misses/mnm6.png"
     };
 
@@ -208,10 +208,10 @@ public class TcData {
     public ArrayList<String> getImageURLS(String name) {
         ArrayList<String> urls = new ArrayList<>();
         switch (name) {
-            case "Dr No:20-3-5E1,Tirumala bypass road,Sivajoythi\\nNagar,Tirupati-517501,Andhra Pradesh,India":
+            case "Dr No:20-3-5E1,Tirumala bypass road,Sivajoythi\nNagar,Tirupati-517501,Andhra Pradesh,India":
                 Collections.addAll(urls, naturals_lounge);
                 break;
-            case "Hotel Fortune Grand Ridge,Tiruchanoor road,\\nTirupati-517501,Andhra pradesh,India":
+            case "Hotel Fortune Grand Ridge,Tiruchanoor road,\nTirupati-517501,Andhra pradesh,India":
                 Collections.addAll(urls, emos);
                 break;
             case "Plot No.161,first floor air by pass road(above State bank of Hyderabad),Tirupati-517501,Andhra Pradesh,India":
@@ -223,19 +223,19 @@ public class TcData {
             case "mr.palli circle,above ICICI Bank,3rd floor,Tirupati-517501,Andhra Pradesh,India":
                 Collections.addAll(urls, jawed_habib);
                 break;
-            case "Hathiramji colony 1st floor air by pass road\\nopposite to HDFC Bank,Tirupati-517501,\\nAndhra Pradesh,India":
+            case "Hathiramji colony 1st floor air by pass road\nopposite to HDFC Bank,Tirupati-517501,\nAndhra Pradesh,India":
                 Collections.addAll(urls, naturals1);
                 break;
-            case "Dr No:3/13/19b,Ramanuja circle,upstairs\\nDominos Pizza,2nd floor,Tirupati-517501,\\nAndhra Pradesh,India":
+            case "Dr No:3/13/19b,Ramanuja circle,upstairs\nDominos Pizza,2nd floor,Tirupati-517501,\nAndhra Pradesh,India":
                 Collections.addAll(urls, naturals1);
                 break;
             case "Dr No:10/116/2,near west church,maruthi nagar,Tirupati-517501,Andhra Pradesh,India":
                 Collections.addAll(urls, larken);
                 break;
-            case "Dr No:16/153,Nethaji road,Tirupati-517501,\\nAndhra Pradesh,India":
+            case "Dr No:16/153,Nethaji road,Tirupati-517501,\nAndhra Pradesh,India":
                 Collections.addAll(urls, chandu_sw);
                 break;
-            case "Dr No:6-8-1252,shop no.7,Patta complex,\\nAnnarao circle,n.g.o's colony, K.T.road,\\nTirupati-517501,Andhra Pradesh,India":
+            case "Dr No:6-8-1252,shop no.7,Patta complex,\nAnnarao circle,n.g.o's colony, K.T.road,\nTirupati-517501,Andhra Pradesh,India":
                 Collections.addAll(urls, cut_cut);
                 break;
             case "Dr No:6-2-77,first floor,opposite Srinivasa theatre,Tirupati-517501,Andhra Pradesh,India":
@@ -250,7 +250,10 @@ public class TcData {
             case "opp. Radhanarayana hospital,Hathiramji colony,Tirupati-517501,Andhra Pradesh,India":
                 Collections.addAll(urls, chaitu_s);
                 break;
-            case "Dr No:19-4-146/c,stv nagar,Tirupati-517501,\\nAndhra Pradesh,India":
+            case "H.NO.203,K.K.LAYOUT,TIRUPATI-517501,ANDHRA PRADESH,INDIA":
+                Collections.addAll(urls, clouds_nine_women);
+                break;
+            case "Dr No:19-4-146/c,stv nagar,Tirupati-517501,\nAndhra Pradesh,India":
                 Collections.addAll(urls, missnmisses);
                 break;
         }

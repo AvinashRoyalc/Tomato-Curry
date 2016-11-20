@@ -3,32 +3,28 @@
     android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:transitionName="top_image">
 
-    <RelativeLayout
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        android:background="#FFFFFF">
+        android:translationZ="@dimen/activity_horizontal_margin"
+        android:foreground="?attr/selectableItemBackground">
 
-        <ImageView
-            android:id="@+id/saloon_poster"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:src="@drawable/eemos" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
 
-        <com.tomato.curry.Font.TcFontIcons
-            android:id="@+id/ivback"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="20dp"
-            android:text="b"
-            android:textColor="#4862b9"
-            android:textSize="24sp" />
-
-    </RelativeLayout>
+            <ImageView
+                android:id="@+id/saloon_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/eemos" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
 
 
     <android.support.v7.widget.RecyclerView

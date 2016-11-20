@@ -4,9 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
 import com.tomato.curry.R;
 
@@ -19,12 +17,12 @@ public class SaloonListAdapter extends RecyclerView.Adapter<SaloonListAdapter.Vi
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        public ImageView mImageView,mivbadge;
+        public ImageView mImageView, mivbadge;
 
         public ViewHolder(View v) {
             super(v);
             mImageView = (ImageView) v.findViewById(R.id.saloon_banner);
-            mivbadge=(ImageView)v.findViewById(R.id.ivbadge);
+            mivbadge = (ImageView) v.findViewById(R.id.ivbadge);
         }
     }
 
@@ -46,7 +44,8 @@ public class SaloonListAdapter extends RecyclerView.Adapter<SaloonListAdapter.Vi
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.mImageView.setImageResource(banner_imgs.get(position));
-
+        if (position < 4)
+            holder.mivbadge.setVisibility(View.VISIBLE);
 
     }
 
